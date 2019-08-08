@@ -287,67 +287,6 @@ http://www.xganon.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-jst-ph">
-<description>Components Scott made</description>
-<packages>
-<package name="JST_B3B-PH_HEADER">
-<description>3-pin JST PH Shrouded Header &lt;br&gt;
-2.0mm pitch &lt;br&gt;
-P/N B3B-PH-K-S.  Mating plug PHR-3 &lt;br&gt;</description>
-<pad name="P3" x="-1.9725" y="0.0475" drill="0.8" shape="long" rot="R90"/>
-<pad name="P2" x="0.0275" y="0.0475" drill="0.8" shape="long" rot="R90"/>
-<pad name="P1" x="2.0275" y="0.0475" drill="0.8" shape="long" rot="R90"/>
-<wire x1="-3.9225" y1="2.3825" x2="3.9275" y2="2.3825" width="0.127" layer="21"/>
-<wire x1="3.9275" y1="2.3825" x2="3.9275" y2="-2.1175" width="0.127" layer="21"/>
-<wire x1="3.9275" y1="-2.1175" x2="-3.9225" y2="-2.1175" width="0.127" layer="21"/>
-<wire x1="-3.9225" y1="-2.1175" x2="-3.9225" y2="2.3825" width="0.127" layer="21"/>
-<rectangle x1="-1.9725" y1="-2.1175" x2="2.0275" y2="-1.6175" layer="21"/>
-<text x="-3.9725" y="2.6825" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="2.145" y="-1.635" size="0.8128" layer="21" font="vector">1</text>
-</package>
-</packages>
-<symbols>
-<symbol name="JST_PHR-3">
-<description>3-pin JST PH Shrouded Header, top entry &lt;br&gt;
-P/N B3B-PH-K-S &lt;br&gt;
-Mating connector PHR-3 &lt;br&gt;</description>
-<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle"/>
-<pin name="2" x="-5.08" y="0" visible="pin" length="middle"/>
-<pin name="3" x="-5.08" y="-2.54" visible="pin" length="middle"/>
-<text x="-2.54" y="5.842" size="1.27" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-6.858" size="1.27" layer="96">&gt;VALUE</text>
-<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<circle x="0" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="0.915809375" width="0.254" layer="94"/>
-<circle x="0" y="-2.54" radius="0.915809375" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JST-PH_3-PIN_HEADER">
-<description>3-pin JST PH Shrouded Header, top entry &lt;br&gt;
-P/N B3B-PH-K-S &lt;br&gt;
-Mating connector PHR-3 &lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="JST_PHR-3" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="JST_B3B-PH_HEADER">
-<connects>
-<connect gate="G$1" pin="1" pad="P1"/>
-<connect gate="G$1" pin="2" pad="P2"/>
-<connect gate="G$1" pin="3" pad="P3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Rembrandt Electronics - JST XH Connectors v1-0">
 <packages>
 <package name="JST-XH-02-PACKAGE-LONG-PAD">
@@ -395,6 +334,52 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="-1.3" y1="-2.3" x2="-1.3" y2="-1.8" width="0.2" layer="21"/>
 <wire x1="1.3" y1="-2.3" x2="1.3" y2="-1.8" width="0.2" layer="21"/>
 <wire x1="-1.3" y1="-1.8" x2="1.3" y2="-1.8" width="0.2" layer="21"/>
+</package>
+<package name="JST-XH-03-PACKAGE-LONG-PAD">
+<description>&lt;b&gt;JST XH Connector Long Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="4.95" y1="-2.3575" x2="4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="4.95" y1="3.3925" x2="-4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="3.3925" x2="-4.95" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="-2.3575" x2="4.95" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.555" y="-2.04" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.6025" y="3.8925" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-2.6" y1="-2.3" x2="-2.6" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="2.5" y1="-2.3" x2="2.5" y2="-1.8" width="0.254" layer="21"/>
+</package>
+<package name="JST-XH-03-PACKAGE-ROUND-PAD">
+<description>&lt;b&gt;JST XH Connector Round Pads (Package)&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="4.95" y1="-2.3575" x2="4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="4.95" y1="3.3925" x2="-4.95" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="3.3925" x2="-4.95" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-4.95" y1="-2.3575" x2="4.95" y2="-2.3575" width="0.254" layer="21"/>
+<pad name="3" x="2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<text x="-5.555" y="-2.04" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.6025" y="3.8925" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
+<wire x1="-2.6" y1="-2.3" x2="-2.6" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="2.5" y1="-2.3" x2="2.5" y2="-1.8" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -446,6 +431,44 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="JST-XH-03-PIN" prefix="X">
+<description>&lt;b&gt;JST XH Connector 2 Pin&lt;/b&gt;&lt;p&gt;
+
+Wire to board connector.
+
+Pitch: 2,54 mm, (0.100")&lt;p&gt;
+Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
+
+&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
+&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="-1" symbol="MV" x="2.54" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="2.54" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="2.54" y="2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-LONG-PAD" package="JST-XH-03-PACKAGE-LONG-PAD">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-ROUND-PAD" package="JST-XH-03-PACKAGE-ROUND-PAD">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -459,9 +482,9 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </classes>
 <parts>
 <part name="U$1" library="Arduino-clone" deviceset="NANO" device=""/>
-<part name="U$4" library="con-jst-ph" deviceset="JST-PH_3-PIN_HEADER" device=""/>
-<part name="U$5" library="con-jst-ph" deviceset="JST-PH_3-PIN_HEADER" device=""/>
 <part name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-LONG-PAD"/>
+<part name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-03-PIN" device="-LONG-PAD"/>
+<part name="X3" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-03-PIN" device="-LONG-PAD"/>
 </parts>
 <sheets>
 <sheet>
@@ -469,20 +492,32 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="53.34" y="66.04" smashed="yes"/>
-<instance part="U$4" gate="G$1" x="83.82" y="71.12" smashed="yes">
-<attribute name="NAME" x="81.28" y="76.962" size="1.27" layer="95"/>
-<attribute name="VALUE" x="81.28" y="64.262" size="1.27" layer="96"/>
-</instance>
-<instance part="U$5" gate="G$1" x="88.9" y="55.88" smashed="yes">
-<attribute name="NAME" x="86.36" y="61.722" size="1.27" layer="95"/>
-<attribute name="VALUE" x="86.36" y="49.022" size="1.27" layer="96"/>
-</instance>
 <instance part="X1" gate="-2" x="27.94" y="96.52" smashed="yes">
 <attribute name="NAME" x="30.48" y="95.758" size="1.524" layer="95"/>
 </instance>
 <instance part="X1" gate="-1" x="27.94" y="99.06" smashed="yes">
 <attribute name="NAME" x="30.48" y="98.298" size="1.524" layer="95"/>
 <attribute name="VALUE" x="27.178" y="100.457" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="-1" x="83.82" y="83.82" smashed="yes">
+<attribute name="NAME" x="86.36" y="83.058" size="1.524" layer="95"/>
+<attribute name="VALUE" x="83.058" y="85.217" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="-2" x="83.82" y="81.28" smashed="yes">
+<attribute name="NAME" x="86.36" y="80.518" size="1.524" layer="95"/>
+</instance>
+<instance part="X2" gate="-3" x="83.82" y="78.74" smashed="yes">
+<attribute name="NAME" x="86.36" y="77.978" size="1.524" layer="95"/>
+</instance>
+<instance part="X3" gate="-1" x="99.06" y="58.42" smashed="yes">
+<attribute name="NAME" x="101.6" y="57.658" size="1.524" layer="95"/>
+<attribute name="VALUE" x="98.298" y="59.817" size="1.778" layer="96"/>
+</instance>
+<instance part="X3" gate="-2" x="99.06" y="55.88" smashed="yes">
+<attribute name="NAME" x="101.6" y="55.118" size="1.524" layer="95"/>
+</instance>
+<instance part="X3" gate="-3" x="99.06" y="53.34" smashed="yes">
+<attribute name="NAME" x="101.6" y="52.578" size="1.524" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -491,24 +526,30 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <net name="N$4" class="0">
 <segment>
 <wire x1="25.4" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="73.66" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="58.42" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <junction x="71.12" y="73.66"/>
 <pinref part="X1" gate="-2" pin="S"/>
 <wire x1="25.4" y1="96.52" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="81.28" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="83.82" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="71.12" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D5"/>
 <wire x1="76.2" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="73.66" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -516,8 +557,8 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <pinref part="U$1" gate="G$1" pin="D3"/>
 <wire x1="63.5" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="58.42" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -532,14 +573,17 @@ Number of pins: &lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <label x="22.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="3"/>
-<wire x1="83.82" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <label x="78.74" y="53.34" size="1.778" layer="95"/>
+<pinref part="X3" gate="-3" pin="S"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="3"/>
-<wire x1="78.74" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="73.66" y="68.58" size="1.778" layer="95"/>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="81.28" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="78.74" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND2"/>
